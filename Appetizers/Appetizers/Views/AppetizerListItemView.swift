@@ -12,15 +12,16 @@ struct AppetizerListItemView: View {
 	
     var body: some View {
 		HStack{
-			Image(systemName: appetizer.imageURL)
-				.resizable()
+			AppetizerRemoteImageView(urlString: appetizer.imageURL)
 				.scaledToFit()
-				.presentationCornerRadius(8)
+				.cornerRadius(8)
 			
 			VStack(alignment: .leading, spacing: 10){
 				Text(appetizer.name)
 					.font(.title2)
 					.fontWeight(.medium)
+					.scaledToFit()
+					.minimumScaleFactor(0.5)
 				
 				Text("\(appetizer.price, specifier: "%.2f")")
 					.foregroundStyle(.secondary)
@@ -29,7 +30,6 @@ struct AppetizerListItemView: View {
 			.padding()
 		}
 		.frame(width: .infinity, height: 90)
-		.padding()
     }
 }
 
