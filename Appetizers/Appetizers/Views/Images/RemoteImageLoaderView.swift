@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct AppetizerRemoteImageView: View {
-	@StateObject var imageLoader = AppetizerImageLoaderViewModel()
+struct RemoteImageLoaderView: View {
+	@StateObject var imageLoader = RemoteImageLoaderViewModel()
 	let urlString: String
 	
 	var body: some View {

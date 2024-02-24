@@ -19,14 +19,3 @@ struct ActivityIndicator: UIViewRepresentable {
 	
 	func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
 }
-
-struct LoadingView: View {
-	var body: some View {
-		ZStack{
-			Color(.systemBackground)
-				.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/) // fills entire screen
-			
-			ActivityIndicator()
-		}
-	}
-}

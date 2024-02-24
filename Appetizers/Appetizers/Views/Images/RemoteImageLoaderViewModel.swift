@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class AppetizerImageLoaderViewModel: ObservableObject {
+final class RemoteImageLoaderViewModel: ObservableObject {
 	@Published var image: Image? = nil
 	
 	func load(fromURLString: String){
