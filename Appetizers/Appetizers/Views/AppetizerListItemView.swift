@@ -13,21 +13,20 @@ struct AppetizerListItemView: View {
     var body: some View {
 		HStack{
 			AppetizerRemoteImageView(urlString: appetizer.imageURL)
+				.frame(width: 120, height: 90)
 				.scaledToFit()
 				.cornerRadius(8)
 			
+			
 			VStack(alignment: .leading, spacing: 10){
 				Text(appetizer.name)
-					.font(.title2)
+					.font(.title3)
 					.fontWeight(.medium)
-					.scaledToFit()
-					.minimumScaleFactor(0.5)
 				
 				Text("\(appetizer.price, specifier: "%.2f")")
 					.foregroundStyle(.secondary)
 					.fontWeight(.semibold)
 			}
-			.padding()
 		}
 		.frame(width: .infinity, height: 90)
     }
