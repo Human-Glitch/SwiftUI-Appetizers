@@ -14,7 +14,7 @@ struct AppetizerListView: View {
 		ZStack{
 			NavigationStack{
 				List(viewModel.appetizers) { appetizer in
-					AppetizerListCell(appetizer: appetizer)
+					AppetizerListItemView(appetizer: appetizer)
 				}
 				.navigationTitle("🍟 Appetizers")
 			}
