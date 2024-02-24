@@ -12,7 +12,7 @@ struct AppetizerListCell: View {
 	
     var body: some View {
 		HStack{
-			Image(systemName: "sun.max")
+			Image(systemName: appetizer.imageURL)
 				.resizable()
 				.scaledToFit()
 				.presentationCornerRadius(8)
@@ -29,7 +29,7 @@ struct AppetizerListCell: View {
 			.padding()
 		}
 		.frame(width: .infinity, height: 90)
-		.padding(.leading)
+		.padding()
     }
 }
 
