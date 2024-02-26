@@ -26,6 +26,7 @@
 		E757C5252B8AA04700298DA4 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C5242B8AA04700298DA4 /* RemoteImage.swift */; };
 		E757C52E2B8AACAC00298DA4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C52D2B8AACAC00298DA4 /* LoadingView.swift */; };
 		E757C5302B8AAD0100298DA4 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C52F2B8AAD0100298DA4 /* AlertItem.swift */; };
+		E7B21D192B8C485F00D4380E /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D182B8C485F00D4380E /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E757C5242B8AA04700298DA4 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E757C52D2B8AACAC00298DA4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E757C52F2B8AAD0100298DA4 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		E7B21D182B8C485F00D4380E /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				E757C5112B8A834400298DA4 /* AppetizerListViewModel.swift */,
 				E757C5032B89B7A700298DA4 /* AppetizerListView.swift */,
+				E7B21D182B8C485F00D4380E /* AppetizerDetailView.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				E757C5162B8A90A000298DA4 /* ActivityIndicator.swift in Sources */,
 				E757C5062B89B7B500298DA4 /* AccountView.swift in Sources */,
 				E757C51A2B8A97EA00298DA4 /* RemoteImageLoaderView.swift in Sources */,
+				E7B21D192B8C485F00D4380E /* AppetizerDetailView.swift in Sources */,
 				E757C4F72B89B72500298DA4 /* AppetizerTabView.swift in Sources */,
 				E757C50E2B89C87600298DA4 /* NetworkManager.swift in Sources */,
 				E757C5202B8A9EC400298DA4 /* RemoteImageLoaderViewModel.swift in Sources */,
