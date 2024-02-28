@@ -9,18 +9,16 @@ import SwiftUI
 
 struct APButton: View {
 	var title: LocalizedStringKey
+	
     var body: some View {
-		Button{
-			
-		} label: {
-			Text(title)
-				.frame(width: 250, height: 50)
-		}
-		.buttonStyle(.borderedProminent)
-		.tint(.brandPrimary)
-		.font(.title3)
-		.fontWeight(.semibold)
-		.padding()
+		Text(title)
+			.frame(width: 250, height: 50)
+			.font(.title3)
+			.fontWeight(.semibold)
+			.foregroundStyle(.white)
+			.background(.brandPrimary)
+			.cornerRadius(8)
+			.padding()
     }
 }
 

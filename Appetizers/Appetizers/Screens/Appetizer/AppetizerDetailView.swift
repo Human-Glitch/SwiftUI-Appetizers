@@ -68,14 +68,22 @@ struct AppetizerDetailView: View {
 			}
 			.padding()
 			
-			APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
+			Button{
+				
+			} label: {
+				APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
+			}
 		}
 		.frame(width: 300, height: 600)
 		.background(Color(.systemBackground))
 		.cornerRadius(12)
 		.shadow(radius: 40)
 		.overlay(
-			XDismissButton(isShowingDetailView: $isShowingDetailView),
+			Button{
+				isShowingDetailView = false
+			} label: {
+				XDismissButton()
+			},
 			alignment: .topTrailing)
     }
 }
