@@ -9,11 +9,12 @@ import SwiftUI
 
 struct AppetizerDetailView: View {
 	let appetizer: Appetizer
+	@Binding var isShowingDetailView: Bool
 	
     var body: some View {
 		VStack(alignment: .center, spacing: 25){
 			RemoteImageLoaderView(urlString: appetizer.imageURL)
-				.scaledToFit()
+				.aspectRatio(contentMode: .fill)
 			
 			Text(appetizer.name)
 				.font(.title2)
@@ -78,15 +79,15 @@ struct AppetizerDetailView: View {
 			.tint(.brandPrimary)
 			.font(.title3)
 			.fontWeight(.semibold)
-			.padding(.bottom, 30)
+			.padding()
 		}
-		.frame(width: 300, height: 525)
+		.frame(width: 300, height: 600)
 		.background(Color(.systemBackground))
 		.cornerRadius(12)
 		.shadow(radius: 40)
 		.overlay(
 			Button{
-				
+				isShowingDetailView = false
 			}
 			label: {
 				ZStack{
@@ -107,5 +108,7 @@ struct AppetizerDetailView: View {
 }
 
 #Preview {
-	AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+	AppetizerDetailView(
+		appetizer: MockData.sampleAppetizer,
+		isShowingDetailView: .constant(false))
 }

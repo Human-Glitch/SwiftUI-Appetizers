@@ -17,7 +17,6 @@ struct AppetizerListItemView: View {
 				.scaledToFit()
 				.cornerRadius(8)
 			
-			
 			VStack(alignment: .leading, spacing: 10){
 				Text(appetizer.name)
 					.font(.title3)
