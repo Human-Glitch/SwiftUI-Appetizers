@@ -28,10 +28,12 @@ struct AppetizerListView: View {
 							selectedAppetizer = appetizer
 						}
 				}
+				.disabled(isShowingDetailView)
 			}
 			.onAppear {
 				viewModel.getAppetizers()
 			}
+			.blur(radius: isShowingDetailView ? 20 : 0)
 			
 			if isShowingDetailView {
 				AppetizerDetailView(
