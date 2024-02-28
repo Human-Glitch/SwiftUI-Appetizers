@@ -14,8 +14,7 @@ struct APButton: View {
 			
 		} label: {
 			Text(title)
-				.frame(width: 260, height: 50)
-				.padding(5)
+				.frame(width: 250, height: 50)
 		}
 		.buttonStyle(.borderedProminent)
 		.tint(.brandPrimary)
