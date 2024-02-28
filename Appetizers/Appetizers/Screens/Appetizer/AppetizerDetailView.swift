@@ -28,41 +28,9 @@ struct AppetizerDetailView: View {
 			HStack(spacing: 10){
 				Spacer()
 				
-				VStack{
-					Text("Calories")
-						.font(.caption)
-						.bold()
-					
-					Text("\(appetizer.calories)")
-						.foregroundStyle(.secondary)
-						.fontWeight(.semibold)
-						.italic()
-				}
-				.frame(width: 65, height: 50, alignment: .center)
-				
-				VStack{
-					Text("Carbs")
-						.font(.caption)
-						.bold()
-					
-					Text("\(appetizer.carbs) g")
-						.foregroundStyle(.secondary)
-						.fontWeight(.semibold)
-						.italic()
-				}
-				.frame(width: 65, height: 50, alignment: .center)
-				
-				VStack{
-					Text("Protein")
-						.font(.caption)
-						.bold()
-					
-					Text("\(appetizer.carbs) g")
-						.foregroundStyle(.secondary)
-						.fontWeight(.semibold)
-						.italic()
-				}
-				.frame(width: 65, height: 50, alignment: .center)
+				NutritionInfo(title: "Calories", value: "\(appetizer.calories)")
+				NutritionInfo(title: "Carbs", value: "\(appetizer.carbs) g")
+				NutritionInfo(title: "Protein",value: "\(appetizer.protein) g")
 				
 				Spacer()
 			}
@@ -86,6 +54,28 @@ struct AppetizerDetailView: View {
 			},
 			alignment: .topTrailing)
     }
+}
+
+struct NutritionInfo: View {
+	let title: String
+	let value: String
+	
+	var body: some View {
+		VStack{
+			Text(title)
+				.font(.caption)
+				.bold()
+			
+			Text(value)
+				.foregroundStyle(.secondary)
+				.fontWeight(.semibold)
+				.italic()
+		}
+		.frame(
+			width: 65,
+			height: 50,
+			alignment: .center)
+	}
 }
 
 #Preview {

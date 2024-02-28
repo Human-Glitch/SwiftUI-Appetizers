@@ -22,7 +22,7 @@ struct AppetizerListItemView: View {
 					.font(.title3)
 					.fontWeight(.medium)
 				
-				Text("\(appetizer.price, specifier: "%.2f")")
+				Text("$\(appetizer.price, specifier: "%.2f")")
 					.foregroundStyle(.secondary)
 					.fontWeight(.semibold)
 			}
