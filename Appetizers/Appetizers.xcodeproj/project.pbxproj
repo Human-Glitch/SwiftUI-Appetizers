@@ -27,13 +27,13 @@
 		E757C52E2B8AACAC00298DA4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C52D2B8AACAC00298DA4 /* LoadingView.swift */; };
 		E757C5302B8AAD0100298DA4 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E757C52F2B8AAD0100298DA4 /* AlertItem.swift */; };
 		E7B21D192B8C485F00D4380E /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D182B8C485F00D4380E /* AppetizerDetailView.swift */; };
-		E7B21D1C2B8EE0EA00D4380E /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D1B2B8EE0EA00D4380E /* APButton.swift */; };
 		E7B21D1E2B8EE3DE00D4380E /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D1D2B8EE3DE00D4380E /* XDismissButton.swift */; };
 		E7B21D202B92A8A200D4380E /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D1F2B92A8A200D4380E /* AccountViewModel.swift */; };
 		E7B21D222B92AA0000D4380E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D212B92AA0000D4380E /* String+Ext.swift */; };
 		E7B21D242B92B00400D4380E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D232B92B00400D4380E /* User.swift */; };
 		E7B21D292B92E11700D4380E /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D282B92E11700D4380E /* EmptyStateView.swift */; };
 		E7B21D2B2B92E50100D4380E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D2A2B92E50100D4380E /* Order.swift */; };
+		E7B21D2D2B92FFA300D4380E /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D2C2B92FFA300D4380E /* CustomModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,13 +59,13 @@
 		E757C52D2B8AACAC00298DA4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E757C52F2B8AAD0100298DA4 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		E7B21D182B8C485F00D4380E /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
-		E7B21D1B2B8EE0EA00D4380E /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		E7B21D1D2B8EE3DE00D4380E /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		E7B21D1F2B92A8A200D4380E /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		E7B21D212B92AA0000D4380E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E7B21D232B92B00400D4380E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7B21D282B92E11700D4380E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E7B21D2A2B92E50100D4380E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		E7B21D2C2B92FFA300D4380E /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +212,7 @@
 				E757C5222B8A9F3D00298DA4 /* UIKit Components */,
 				E757C52D2B8AACAC00298DA4 /* LoadingView.swift */,
 				E7B21D282B92E11700D4380E /* EmptyStateView.swift */,
+				E7B21D2C2B92FFA300D4380E /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,7 +237,6 @@
 		E7B21D1A2B8EE0D900D4380E /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				E7B21D1B2B8EE0EA00D4380E /* APButton.swift */,
 				E7B21D1D2B8EE3DE00D4380E /* XDismissButton.swift */,
 			);
 			path = Buttons;
@@ -337,10 +337,10 @@
 				E757C5202B8A9EC400298DA4 /* RemoteImageLoaderViewModel.swift in Sources */,
 				E757C5302B8AAD0100298DA4 /* AlertItem.swift in Sources */,
 				E757C4F52B89B72500298DA4 /* AppetizersApp.swift in Sources */,
-				E7B21D1C2B8EE0EA00D4380E /* APButton.swift in Sources */,
 				E7B21D292B92E11700D4380E /* EmptyStateView.swift in Sources */,
 				E7B21D2B2B92E50100D4380E /* Order.swift in Sources */,
 				E757C5142B8A882100298DA4 /* AlertContext.swift in Sources */,
+				E7B21D2D2B92FFA300D4380E /* CustomModifiers.swift in Sources */,
 				E757C5042B89B7A700298DA4 /* AppetizerListView.swift in Sources */,
 				E757C5082B89B7C200298DA4 /* OrderView.swift in Sources */,
 				E7B21D1E2B8EE3DE00D4380E /* XDismissButton.swift in Sources */,

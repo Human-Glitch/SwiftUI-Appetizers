@@ -37,8 +37,9 @@ struct AccountView: View {
 			Button{
 				viewModel.saveChanges()
 			} label: {
-				APButton(title: "Save Changes")
+				Text("Save Changes")
 			}
+			.modifier(StandardButtonStyle())
 			.padding(30)
 		}
 		.onAppear {
