@@ -44,7 +44,7 @@ struct AccountView: View {
 				
 				Section(header: Text("Requests")) {
 					Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
-					Toggle("Frequent Napkins", isOn: $viewModel.user.frequentRefills)
+					Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
 				}
 				.toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
 				

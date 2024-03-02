@@ -45,4 +45,17 @@ final class AppetizerListViewModel: ObservableObject {
 			}
 		}
 	}
+	
+	func getAppetizersAsync() async throws {
+		isLoading = true
+		
+		do {
+			self.appetizers = try await NetworkManager.shared.getAppetizersAsync()
+		} catch {
+			throw APError.invalidResponse
+		}
+		
+		isLoading = false
+						
+	}
 }

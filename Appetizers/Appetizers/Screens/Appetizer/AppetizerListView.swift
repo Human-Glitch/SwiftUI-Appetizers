@@ -29,8 +29,20 @@ struct AppetizerListView: View {
 				}
 				.disabled(viewModel.isShowingDetailView)
 			}
-			.onAppear {
-				viewModel.getAppetizers()
+			.task {
+				do {
+					try await viewModel.getAppetizersAsync()
+				} catch {
+					switch error {
+						case APError.invalidResponse:
+							viewModel.alertItem = AlertContext.invalidResponse
+						
+						default:
+							viewModel.alertItem = AlertContext.unableToComplete
+						
+					}
+					
+				}
 			}
 			.blur(radius: viewModel.getOpacity())
 			
