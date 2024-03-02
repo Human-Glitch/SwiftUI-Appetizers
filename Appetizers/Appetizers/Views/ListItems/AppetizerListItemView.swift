@@ -26,7 +26,6 @@ struct AppetizerListItemView: View {
 					.fontWeight(.semibold)
 			}
 		}
-		.frame(width: .infinity, height: 90)
     }
 }
 
