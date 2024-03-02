@@ -33,6 +33,7 @@
 		E7B21D222B92AA0000D4380E /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D212B92AA0000D4380E /* String+Ext.swift */; };
 		E7B21D242B92B00400D4380E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D232B92B00400D4380E /* User.swift */; };
 		E7B21D292B92E11700D4380E /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D282B92E11700D4380E /* EmptyStateView.swift */; };
+		E7B21D2B2B92E50100D4380E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B21D2A2B92E50100D4380E /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		E7B21D212B92AA0000D4380E /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E7B21D232B92B00400D4380E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7B21D282B92E11700D4380E /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		E7B21D2A2B92E50100D4380E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				E757C50F2B89C97100298DA4 /* APError.swift */,
 				E757C5092B89BDF700298DA4 /* Appetizer.swift */,
 				E757C5242B8AA04700298DA4 /* RemoteImage.swift */,
+				E7B21D2A2B92E50100D4380E /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				E757C4F52B89B72500298DA4 /* AppetizersApp.swift in Sources */,
 				E7B21D1C2B8EE0EA00D4380E /* APButton.swift in Sources */,
 				E7B21D292B92E11700D4380E /* EmptyStateView.swift in Sources */,
+				E7B21D2B2B92E50100D4380E /* Order.swift in Sources */,
 				E757C5142B8A882100298DA4 /* AlertContext.swift in Sources */,
 				E757C5042B89B7A700298DA4 /* AppetizerListView.swift in Sources */,
 				E757C5082B89B7C200298DA4 /* OrderView.swift in Sources */,
