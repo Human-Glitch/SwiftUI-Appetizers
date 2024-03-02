@@ -11,10 +11,27 @@ struct AppetizerListItemView: View {
 	
     var body: some View {
 		HStack{
-			RemoteImageLoaderView(urlString: appetizer.imageURL)
-				.frame(width: 120, height: 90)
-				.scaledToFit()
-				.cornerRadius(8)
+			//MARK: Supports caching
+//			RemoteImageLoaderView(urlString: appetizer.imageURL)
+//				.frame(width: 120, height: 90)
+//				.scaledToFit()
+//				.cornerRadius(8)
+			
+			//MARK: Does not support caching
+			AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+				image
+					.resizable()
+					.scaledToFill()
+					.frame(width: 120, height: 90)
+					.cornerRadius(8)
+				
+			} placeholder: {
+				Image("food-placeholder")
+					.resizable()
+					.scaledToFill()
+					.frame(width: 120, height: 90)
+					.cornerRadius(8)
+			}
 			
 			VStack(alignment: .leading, spacing: 10){
 				Text(appetizer.name)
